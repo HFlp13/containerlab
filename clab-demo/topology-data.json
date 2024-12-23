@@ -1,0 +1,145 @@
+{
+  "name": "demo",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-1529b40ec060",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "n1": {
+      "index": "0",
+      "shortname": "n1",
+      "longname": "clab-demo-n1",
+      "fqdn": "n1.demo.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-demo/n1",
+      "kind": "linux",
+      "image": "praqma/network-multitool:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1529b40ec060",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-demo/n1",
+        "clab-node-name": "n1",
+        "clab-node-type": "",
+        "clab-owner": "deev13",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "demo"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "n2": {
+      "index": "1",
+      "shortname": "n2",
+      "longname": "clab-demo-n2",
+      "fqdn": "n2.demo.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-demo/n2",
+      "kind": "linux",
+      "image": "praqma/network-multitool:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1529b40ec060",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-demo/n2",
+        "clab-node-name": "n2",
+        "clab-node-type": "",
+        "clab-owner": "deev13",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "demo"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "n1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:55:19:d9",
+        "peer": "z"
+      },
+      "z": {
+        "node": "n2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:5b:a0:59",
+        "peer": "a"
+      }
+    }
+  ]
+}
