@@ -1,0 +1,185 @@
+{
+  "name": "br01",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-a671be77e84f",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "ovs1": {
+      "index": "0",
+      "shortname": "ovs1",
+      "longname": "clab-br01-ovs1",
+      "fqdn": "ovs1.br01.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-br01/ovs1",
+      "kind": "ovs-bridge",
+      "image": "",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a671be77e84f",
+        "clab-node-group": "",
+        "clab-node-kind": "ovs-bridge",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-br01/ovs1",
+        "clab-node-name": "ovs1",
+        "clab-node-type": "",
+        "clab-owner": "deev13",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "br01"
+      },
+      "port-bindings": [
+      ]
+    },
+    "srl1": {
+      "index": "1",
+      "shortname": "srl1",
+      "longname": "clab-br01-srl1",
+      "fqdn": "srl1.br01.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-br01/srl1",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:50:01:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a671be77e84f",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-br01/srl1",
+        "clab-node-name": "srl1",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "deev13",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "br01"
+      },
+      "port-bindings": [
+      ]
+    },
+    "srl2": {
+      "index": "2",
+      "shortname": "srl2",
+      "longname": "clab-br01-srl2",
+      "fqdn": "srl2.br01.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-br01/srl2",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:ea:02:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a671be77e84f",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-br01/srl2",
+        "clab-node-name": "srl2",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "deev13",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "br01"
+      },
+      "port-bindings": [
+      ]
+    },
+    "srl3": {
+      "index": "3",
+      "shortname": "srl3",
+      "longname": "clab-br01-srl3",
+      "fqdn": "srl3.br01.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-br01/srl3",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:95:03:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a671be77e84f",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-br01/srl3",
+        "clab-node-name": "srl3",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "deev13",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "br01"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "srl1",
+        "interface": "e1-1",
+        "mac": "aa:c1:ab:0b:60:35",
+        "peer": "z"
+      },
+      "z": {
+        "node": "ovs1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:cd:d0:11",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "srl2",
+        "interface": "e1-1",
+        "mac": "aa:c1:ab:57:f4:a7",
+        "peer": "z"
+      },
+      "z": {
+        "node": "ovs1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:76:28:9f",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "srl3",
+        "interface": "e1-1",
+        "mac": "aa:c1:ab:19:43:23",
+        "peer": "z"
+      },
+      "z": {
+        "node": "ovs1",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:a6:a7:26",
+        "peer": "a"
+      }
+    }
+  ]
+}

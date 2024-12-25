@@ -1,0 +1,287 @@
+{
+  "name": "frrlab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-a671be77e84f",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "PC1": {
+      "index": "0",
+      "shortname": "PC1",
+      "longname": "clab-frrlab-PC1",
+      "fqdn": "PC1.frrlab.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-frrlab/PC1",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a671be77e84f",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-frrlab/PC1",
+        "clab-node-name": "PC1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "frrlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC2": {
+      "index": "1",
+      "shortname": "PC2",
+      "longname": "clab-frrlab-PC2",
+      "fqdn": "PC2.frrlab.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-frrlab/PC2",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a671be77e84f",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-frrlab/PC2",
+        "clab-node-name": "PC2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "frrlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC3": {
+      "index": "2",
+      "shortname": "PC3",
+      "longname": "clab-frrlab-PC3",
+      "fqdn": "PC3.frrlab.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-frrlab/PC3",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a671be77e84f",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-frrlab/PC3",
+        "clab-node-name": "PC3",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "frrlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "router1": {
+      "index": "3",
+      "shortname": "router1",
+      "longname": "clab-frrlab-router1",
+      "fqdn": "router1.frrlab.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-frrlab/router1",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a671be77e84f",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-frrlab/router1",
+        "clab-node-name": "router1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "frrlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "router2": {
+      "index": "4",
+      "shortname": "router2",
+      "longname": "clab-frrlab-router2",
+      "fqdn": "router2.frrlab.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-frrlab/router2",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a671be77e84f",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-frrlab/router2",
+        "clab-node-name": "router2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "frrlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "router3": {
+      "index": "5",
+      "shortname": "router3",
+      "longname": "clab-frrlab-router3",
+      "fqdn": "router3.frrlab.io",
+      "group": "",
+      "labdir": "/home/deev13/github/containerlab/clab-frrlab/router3",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.10",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::a",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a671be77e84f",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/deev13/github/containerlab/clab-frrlab/router3",
+        "clab-node-name": "router3",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/home/deev13/github/containerlab/lab.clab.yaml",
+        "containerlab": "frrlab"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "router1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:93:05:28",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:ee:91:e0",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "router1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:3b:1b:ff",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:eb:48:d1",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "router2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:75:af:25",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router3",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:eb:8c:92",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "PC1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:ed:29:5b",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router1",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:11:11:15",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "PC2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:bb:89:9b",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router2",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:e8:ed:84",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "PC3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:e4:45:be",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router3",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:83:fe:d2",
+        "peer": "a"
+      }
+    }
+  ]
+}
